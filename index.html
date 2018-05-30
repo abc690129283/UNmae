@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/iScroll.css" type="text/css">
+<script>
+    // rem
+    resetrem();
+    window.addEventListener("orientationchange", resetrem); //监听旋转
+    window.addEventListener("resize", resetrem); // 监听窗口变化
+    function resetrem() {
+        var html = document.querySelector("html");
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width / 16 + "px";
+    }
+
+
+</script>
+</head>
+<body>
+ <!-- 头部 -->
+ <header class="headerDIV">
+   <div class="headerDIV-a">
+     <div  class="header-left">
+         <img src="images/city.png">
+         <p>广州</p>
+     </div>
+     <div class="header-conter">
+         <div class="header-conterDIV">
+             <img src="images/search.png">
+             <input type="text" placeholder="请输入商品名称....">
+         </div>
+
+     </div>
+     <div class="header-right">
+         <img src="images/sao.png">
+         <p>扫一扫</p>
+     </div>
+   </div>
+ </header>
+
+<div id="wrapper">
+<div id="scroller">
+<div class="bannerBox">
+ <!-- 图片轮播-->
+        <div id="banner" class="swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner1.png">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <img src="images/banner.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+
+</div>
+ <div class="navDIV">
+     <ul class="nav-a">
+         <li>
+             <a><img src="images/icon.png"></a>
+             <p>新品</p>
+         </li>
+         <li>
+             <a><img src="images/icon1.png"></a>
+             <p>特价</p>
+         </li>
+         <li>
+             <a><img src="images/icon2.png"></a>
+             <p>预定</p>
+         </li>
+         <li>
+             <a><img src="images/icon3.png"></a>
+             <p>积分</p>
+         </li>
+     </ul>
+     <ul class="nav-b">
+         <li>
+             <a><img src="images/icon4.png"></a>
+             <p>众筹</p>
+         </li>
+         <li>
+             <a><img src="images/icon5.png"></a>
+             <p>白条</p>
+         </li>
+         <li>
+             <a><img src="images/icon6.png"></a>
+             <p>头条</p>
+         </li>
+         <li>
+             <a><img src="images/icon7.png"></a>
+             <p>分类</p>
+         </li>
+     </ul>
+
+ </div>
+
+ <div class="titleDIV">
+     <svg class="icon" id="titleDIV-a">
+         <use xlink:href="#icon-laba"></use>
+     </svg>
+     <span>限时秒杀：距离开抢</span>
+     <p>.........</p>
+ </div>
+
+ <div class="galleryDIV">
+     <ul>
+         <li>
+             <img src="images/test.png">
+             <p>猪骨头棒新鲜生鲜肉制品猪大骨头筒骨熬汤佳品500g</p>
+             <span>￥53</span>
+         </li>
+         <li>
+             <img src="images/test1.png">
+             <p>冻品批发大江鸡腿 冷鲜鸡腿放心食材1kg 冷冻食材</p>
+             <span>￥57</span>
+         </li>
+         <li>
+             <img src="images/test2.png">
+             <p>法国加力果12个装 进口新鲜水果 嘎啦苹果 包邮</p>
+             <span>￥59</span>
+         </li>
+     </ul>
+ </div>
+
+ <div class="titleDIV-a">
+     <svg class="icon" id="titleDIV-a1">
+         <use xlink:href="#icon-tubiaozhizuomoban-"></use>
+     </svg>
+     <span>特色专区</span>
+ </div>
+ <div class="galleryDIV">
+     <ul>
+         <li>
+             <img src="images/test3.png">
+             <p>猪骨头棒新鲜生鲜肉制品猪大骨头筒骨熬汤佳品500g</p>
+             <span>￥53</span>
+         </li>
+         <li>
+             <img src="images/test4.png">
+             <p>冻品批发大江鸡腿 冷鲜鸡腿放心食材1kg 冷冻食材</p>
+             <span>￥57</span>
+         </li>
+         <li>
+             <img src="images/test5.png">
+             <p>法国加力果12个装 进口新鲜水果 嘎啦苹果 包邮</p>
+             <span>￥59</span>
+         </li>
+     </ul>
+ </div>
+ <div class="titleDIV-a">
+     <svg class="icon" id="titleDIV-a1">
+         <use xlink:href="#icon-jingpin"></use>
+     </svg>
+     <span>精品专区</span>
+ </div>
+ <div class="galleryDIV">
+     <ul>
+         <li>
+             <img src="images/test6.png">
+             <p>猪骨头棒新鲜生鲜肉制品猪大骨头筒骨熬汤佳品500g</p>
+             <span>￥53</span>
+         </li>
+         <li>
+             <img src="images/test7.png">
+             <p>冻品批发大江鸡腿 冷鲜鸡腿放心食材1kg 冷冻食材</p>
+             <span>￥57</span>
+         </li>
+         <li>
+             <img src="images/test8.png">
+             <p>法国加力果12个装 进口新鲜水果 嘎啦苹果 包邮</p>
+             <span>￥59</span>
+         </li>
+     </ul>
+ </div>
+ <div class="titleDIV-a">
+     <svg class="icon" id="titleDIV-a1">
+         <use xlink:href="#icon-bianmin"></use>
+     </svg>
+     <span>便民服务</span>
+ </div>
+ <div class="itmeDIV">
+     <div class="itmeDIV-left">
+         <img src="images/test.jpg">
+     </div>
+     <div class="itmeDIV-right">
+         <h3>青山湖区熊氏锁业</h3>
+         <p>开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+     </div>
+ </div>
+ <div class="itmeDIV">
+     <div class="itmeDIV-left">
+         <img src="images/test11.png">
+     </div>
+     <div class="itmeDIV-right">
+         <h3>青山湖区熊氏锁业</h3>
+         <p>开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+     </div>
+ </div>
+ <div class="itmeDIV">
+     <div class="itmeDIV-left">
+         <img src="images/test.jpg">
+     </div>
+     <div class="itmeDIV-right">
+         <h3>青山湖区熊氏锁业</h3>
+         <p>开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+     </div>
+ </div>
+ <div class="itmeDIV">
+     <div class="itmeDIV-left">
+         <img src="images/test11.png">
+     </div>
+     <div class="itmeDIV-right">
+         <h3>青山湖区熊氏锁业</h3>
+         <p>开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+     </div>
+ </div>
+</div>
+</div>
+ <!-- 尾部-->
+ <div class="sternDIV">
+     <div class="sternDIV-a">
+         <ul>
+             <li>
+             <svg class="icon" id="titleDIV-a1">
+                 <use xlink:href="#icon-bianmin"></use>
+             </svg>
+             <p>首页</p>
+             </li>
+             <li>
+                 <svg class="icon" id="titleDIV-a1">
+                     <use xlink:href="#icon-jingpin"></use>
+                 </svg>
+                 <p>精彩</p>
+             </li>
+             <li>
+                 <svg class="icon" id="titleDIV-a1">
+                     <use xlink:href="#icon-laba"></use>
+                 </svg>
+                 <p>我的</p>
+             </li>
+         </ul>
+     </div>
+ </div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/iconfont.js"></script>
+ <script src="js/iscroll.js"></script>
+<script>
+    // 页头
+     $(function(){
+         // 获取页头距离浏览器顶部的高度
+         var shart = $(".headerDIV").offset().top;
+         $.event.add(window,"scroll",function(){
+             // 文档的高度
+             var  p  = $(window).scrollTop();
+             // 当文档的高度大于页头距离浏览器顶部的高度
+             if(p>shart){
+                 $(".headerDIV").addClass("headerA");
+             }else{
+                 $(".headerDIV").removeClass("headerA");
+             }
+         });
+     });
+
+    // 图片轮播
+   const mySwiper = new Swiper('.swiper-container',{
+       pagination:'.swiper-pagination', //分页器
+       autoplay:2000,
+       paginationClickable:true,
+       autoplayDisableOnInteraction:false // 注意此参数，默认为true 鼠标点击其他按钮时 自动轮播效果不会停止(false)
+   });
+
+   // 滚动条
+    var myscroll; //myscroll是全局变量，可以在任意地方调用
+    function loaded(){
+        myscroll=new iScroll("wrapper");
+    }
+    window.addEventListener("DOMContentLoaded",loaded,false);
+
+</script>
+</body>
+</html>
